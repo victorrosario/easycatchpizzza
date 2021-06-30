@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif; 
+    background: #9A6339;
+}
+.main img{
+
+    max-width: 80%;
+}
+.logo{
+    width: 135px;
+    height: 50px;
+}
+.contenedor{
+    width: 100%;
+	margin: auto;
+ 
+}
+
+/*---------Estilos del Header---------------*/
+.header {
+  height: 60px;
+    background: #333;
+}
+.header .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+.logo, .icon-menu {
+  margin: 5px;
+  color: #fff;
+}
+.icon-menu {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background: #999;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  margin-left: auto;
+  cursor: pointer;
+}
+.nav {
+  position: absolute;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  transition: all 0.5s;
+   	z-index: 100;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+    height: 60px; 
+}
+.menu__link {
+  display: block;
+  padding: 15px;
+ background: rgba(51,51,51,0.9);
+  text-decoration: none;
+  color: #fff; 
+     height: 60px;
+	border-bottom: 1px solid #999;
+}
+.menu__link:hover {
+  background: white;
+  color: #000;  
+}
+.muestrate{
+ left: 0;
+}
+
+
+/*-------Estilos del Banner-----*/
+.banner img{
+    width: 100%;
+    
+   
+}
+.banner {
+   position: relative;
+   bottom: 50px;
+		
+}
+.banner .contenedor{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+		
+}
+
+/*-------Estilos de Info------*/
+ .info{
+    background: #333;
+    
+    text-align: center;
+     margin-top: -50px; 
+    
+}
+ .info__img{
+    border-radius: 50%;
+    border: 7px solid #444; 
+     position: relative;
+     
+    
+}
+.info__titulo{
+    color: #8f0000;
+}
+.info__txt{
+    text-align: justify;
+    padding: 15px;
+    color: #f75c01;
+}
+
+/*-------- Estilos de Platos--------*/
+.platos{
+    background: #9A6339; 
+    color: #fff;  
+    text-align: center;
+    padding: 15px;
+}
+.platos h3{
+    font-size: 30px;
+}
+.platos .platos__titulo{
+    font-size: 40px;
+}
+.platos .platos__txt{
+    text-align: justify;
+    padding: 15px;
+}
+.platos__img{
+    border-radius: 50%;
+    border: 7px solid #fff; 
+}
+/*---------- Estilos del  Mapa----------*/
+.mapa {
+    padding: 15px ;
+    background:  #F0EDE5;
+    text-align: center;
+}
+.mapa h3{
+    font-size: 25px;
+}
+.mapa p{
+    text-align: justify;
+	
+}
+/*--------Estilos del footer--------*/
+.footer{
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.footer img{
+    width: 50px;
+  
+    margin-right: 10px;
+
+}
+/*--------Estilos Responsive--------*/
+@media(min-width:480px){
+    .main img{
+    max-width: 90%;
+}
+    .contenedor .banner__titulo{
+        font-size: 44px;
+    }
+    .contenedor .banner__txt{
+        font-size: 25px;   
+    }
+	.info__columna{
+        width: 32%;
+    }
+     .info .contenedor{
+    display: flex;
+		 justify-content: space-between;
+		 
+    }
+    
+    .platos .contenedor{  
+     display: flex; 
+     flex-wrap: wrap;
+     justify-content:space-around;
+}
+    .platos__columna{
+        width:  40%;
+    }
+    .platos h3{
+        font-size: 30px;
+    }
+}
+
+@media(min-width:768px){
+      .platos__columna{
+        width: 24%; 
+    } 
+}
+
+@media(min-width:1024px){
+	.nav {
+    position: static;
+    width: auto;
+  }
+  .menu {
+    display: flex;
+  }
+  .icon-menu {
+    display: none;
+  }
+	.menu__link{
+		border: none;
+	}
+    .banner .contenedor .banner__titulo{
+        font-size: 50px;  
+    }
+     .banner .contenedor .banner__txt{
+        font-size: 36px; 
+    }
+    .contenedor{
+        width:1000px;
+    }
+   
+}
+@media(min-width:1280px){
+    .contenedor{
+        width: 1200px;
+    }
+     .banner .contenedor .banner__titulo{
+        font-size: 90px; 
+		
+    }
+     .banner .contenedor .banner__txt{
+        font-size: 46px; 
+    }
+	
+	
+}
+
+  
+ 

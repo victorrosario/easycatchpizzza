@@ -1,0 +1,38 @@
+body{
+    background-color: red;
+}
+
+.panel-default{
+    
+    
+    
+}
+
+.panel-heading{
+    background: blue !important;
+    color: yellowgreen !important;
+    
+}
+.panel-heading h3{
+    font-size: 300%;
+}
+
+.panel-body{
+    background: #fff;
+
+    
+}
+
+label{
+    color: blueviolet;
+}
+
+input{
+    background: rgb(235, 176, 155) !important;
+    color: red !important;
+}
+
+.btn-default{
+    background-color: aqua !important;
+    color: chartreuse;
+}

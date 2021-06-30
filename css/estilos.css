@@ -1,0 +1,48 @@
+
+
+.navbar{
+    background-color:#1d1414e0;
+    
+}
+#navbar li a:link,#navbar li a:visited{
+    color: #8f0000 !important;
+}
+
+#navbar li a:hover,#navbar li a:active{
+    color: #f75c01 !important;
+}
+
+
+
+
+.navbar-brand:link, .navbar-brand:visited{
+    color:#8f0000 !important;
+
+
+}
+
+.navbar-brand:hover, .navbar-brand:active{
+    color:#f75c01 !important;
+}
+
+
+
+
+a img{ /*logo de easycatchpizza barra de navegacion*/
+    position: relative;
+    top: -30px; /* ajustar los valores para mover la imagen */
+    left: -5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 30%;
+    border:2px solid #f75c01;
+    display: block;
+}
+a{
+    color: #8f0000;
+    text-decoration: none;
+    text-shadow: 0 0 30px rgb(182, 17, 17) !important;
+
+}
+
