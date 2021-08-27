@@ -1,0 +1,128 @@
+:root{
+    --main-header-color:linear-gradient(45deg,#f75c01,#8f0000);
+    --main-colordefondo:linear-gradient(80deg, #d11515,#f75c01);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /*background: url(); not-repeat center top*/  /**para ponerle una imagen de fondo  que no se repita y en el centro y ahcia arriba**/
+   /* background-size: cover;*//**tamaño del fondo  que lo cubra**/
+    background: linear-gradient(#a09a8e,#8f0000);
+    font-family: sans-serif; /**tipo de letra**/
+    height: 100vh; /*altura de la imagen de fondo */
+
+    
+    
+}
+
+.login-box{
+    width: 320px; /**anchura*/
+    height: 420px; /*altura*/
+    background:var(--main-colordefondo) ; /*color de fondo */
+    top: 55%; /*hacia arriba*/
+    left: 50%; /*para que este centrado*/
+    position: absolute; /*Investigar*/
+    transform: translate(-55%, -50%); /*menos 50 para las x y menos 50 para las y esto hace que quede centrado es decir estamos afectando el top y el left*/
+    box-sizing: border-box; /*es apra el tamaño del contenedor */
+    padding: 70px; /*70px hacia arriba y abajo y 30px de izqueirda y derecha */
+    
+    
+    
+}
+
+.login-box .avatar{ /*afecta a la clase de la imagen del logo */
+    width: 100px; /*ancho*/
+    height: 100px; /*alto de 100px*/
+    border-radius: 50%; /*borde de la imagen */
+    border-bottom: 5px solid #f75c01;
+    position: absolute; /*para que la imagen se uvique adelante*/
+    top: -50px; /*hacia arriba fuera del recuadro osea que la imagen quede afuera del login-box*/
+    left: calc(50% - 50px);
+    
+    
+}
+
+.login-box h1{
+    margin: 0;
+    padding: 0 0 20px; /*20px de espaciado hacia abajo */
+    text-align: center; /*para quye este centrado*/
+    color: #ffae00; /*color de letra*/
+    font-size: 30px;/*tamaño de letraz de 22px*/
+}
+
+.login-box label{
+    margin: 0; /*le quitamos los espaciados */
+    padding: 0; /*le quitamos los espaciados*/
+    color:#ffae00;
+    font-weight: bold; /*grosor de la letra*/
+    display: block; /*para que el h1 este en una sola linea*/
+}
+
+
+.login-box input{
+    width: 100%; /*ancura de los input del 100% del tamaño del contenedor input*/
+    margin-bottom: 20px; /*margenes hacia abajo de 20px esto es para que no este tan pagado de los demas contenedores*/
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"]{ /*estamos afectando input que tengan los tipo text y password mas directamente*/
+    border: none /*les quitamos los bordes */;
+    border-bottom: 1px solid #8f0000; /*creamos un pequeño borde hacia abajo que es una linea */
+    background: transparent; /*para que el fondo de lso input sea transparente los input dejaran de ser grises  y asi se vean la linea blanca */
+    outline: none; /*INVESTIGAR*/
+    height: 40px; /*altura de los input*/
+    color: #8f0000;
+    font-size: 16px;
+}
+
+.login-box input[type="text"]::placeholder{ /*afectamos el color de las letras de los placeholder*/
+    color:#e4e0e0;
+}
+.login-box input[type="password"]::placeholder{ /*afectamos el color de las letras de los placeholder*/
+    color: #e4e0e0;
+}
+
+.login-box input[type="submit"]{
+    border: none; /*le quitamos los bordes */
+    outline: none; /*INVESGIAR*/
+    height: 40px; /*altura del boton*/
+    background: #8f0000;
+    color: #ffae00;
+    font-size: 18px; /*tamaño de la letra del boton*/
+    border-radius: 20px;
+    
+    
+}
+
+.login-box p{
+    margin: 0;
+    margin-bottom: 5px;
+    color: rgb(105, 1, 1);
+    font-size: larger;
+}
+
+
+.login-box a{
+    text-decoration: none; /*quita las rayas azules de los link*/
+    font-size: 12px; /*tamaño de las letras*/
+    line-height:20px ; /*es una linea divisoria linea de espaciado , es daarle espacio a las letras por arriba */
+    color:#e4e0e0 ;
+}
+
+a :link, .login-box a :visited{
+    color: #ffae00 !important;
+}
+a:hover, .login-box a :active{
+    color: #8f0000 !important;
+}
+
+
+
+
+
+
+
+
+
+    

@@ -10,5 +10,4 @@ $con=mysqli_connect('localhost','root','','easycatchpizza');
 
 
 
-
 ?>

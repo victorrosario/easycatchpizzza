@@ -1,0 +1,81 @@
+:root{
+    --main-header-color:linear-gradient(45deg,#f75c01,#8f0000);
+    --main-colordefondo:linear-gradient(80deg, #d11515,#f75c01);
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    /*background-color: #f75c01;  color anaranjado*/
+    background-color:#fefefe;
+}
+header{
+    height: 40px; /* altura de 40px*/
+    padding: 10px;
+    width: calc(100% - 20px); /*100% del tamano del header - 20px del paddin que es 10% por arriba y abajo y 10% a la izquierda y a la derecha*/
+    line-height: 40px; /*linea de alto de 40px*/
+    display: flex; /* para que todos los elementos  esten en una sola fila */
+    background: var(--main-header-color); /*color de fondo del header*/
+    position: fixed;/* para que la cabecera se quede fija arriba de nuestra pantalla */
+    top: 0;/* para asegurar que el heder siempre este a esa altura  */
+    left:0; /* para asegurar que el header es decir la barra siempre este a esa altura*/ 
+}
+.logo-place{ /*logo de la cabecera osea de la barra de navegacion */
+    width: 150px; /*ancho de 150 px*/
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+}
+.logo-place img{ /*logo easycathpizza barra de navegacion en el ecommerce*/ 
+    width: 100%; /*que tome el ancho del 100% del contenedor mayor*/
+    position: relative;
+    top: -57px; /* ajustar los valores para mover la imagen */
+    left: -5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 30%;
+    border:2px solid #f75c01;
+    display: block;
+}
+.search-place{
+    width: calc(100% - 440px); /**/ 
+    display: flex; /*para que todos los elementos esten en una sola fila  */ 
+    padding: 0px 20px;
+}
+.search-place input{
+    padding: 10px;
+    font-size: 15px;
+    background-color: #fefefe;
+    border: 1px solid  #ccc;
+    width: calc(100% - 62px); /*ancho de imput de busqueda */
+    font-family: 'Sen', sans-serif;
+}
+.search-place input::placeholder{
+    color: #8f0000;
+}
+.btn-main{ /*boton del input search del buscador */
+    padding: 10px;
+    font-size: 15px;
+    background: var(--main-colordefondo);
+    color: #ffae00;
+    border-style: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn-search{
+    width: 40px;/* 40px de ancho*/
+}
+.options-place{
+    width: 250px;
+    display: flex; /*para que todos los elementos esten en una sola fila */
+    justify-content: flex-end;
+}
+.item-option{
+    padding: 5px 10px;
+    line-height: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    color:#fc7d00;
+
+}

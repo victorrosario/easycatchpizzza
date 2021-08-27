@@ -1,0 +1,268 @@
+:root{
+    --main-header-color:linear-gradient(45deg,#f75c01,#8f0000);
+    --main-colordefondo:linear-gradient(80deg, #d11515,#f75c01);
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    /*background-color: #f75c01;  color anaranjado*/
+    background-color:#fefefe;
+}
+header{
+    height: 40px; /* altura de 40px*/
+    padding: 10px;
+    width: calc(100% - 20px); /*100% del tamano del header - 20px del paddin que es 10% por arriba y abajo y 10% a la izquierda y a la derecha*/
+    line-height: 40px; /*linea de alto de 40px*/
+    display: flex; /* para que todos los elementos  esten en una sola fila */
+    background: var(--main-header-color); /*color de fondo del header*/
+    position: fixed;/* para que la cabecera se quede fija arriba de nuestra pantalla */
+    top: 0;/* para asegurar que el heder siempre este a esa altura  */
+    left:0; /* para asegurar que el header es decir la barra siempre este a esa altura*/ 
+}
+.logo-place{ /*logo de la cabecera osea de la barra de navegacion */
+    width: 150px; /*ancho de 150 px*/
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+}
+.logo-place img{ /*logo easycathpizza barra de navegacion en el ecommerce*/ 
+    width: 100%; /*que tome el ancho del 100% del contenedor mayor*/
+    position: relative;
+    top: -57px; /* ajustar los valores para mover la imagen */
+    left: -5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 30%;
+    border:2px solid #f75c01;
+    display: block;
+}
+.search-place{
+    width: calc(100% - 440px); /**/ 
+    display: flex; /*para que todos los elementos esten en una sola fila  */ 
+    padding: 0px 20px;
+}
+ input{
+    padding: 10px;
+    font-size: 15px;
+    background-color: #fefefe;
+    border: 1px solid  #ccc;
+    width: calc(100% - 62px); /*ancho de imput de busqueda */
+    font-family: 'Sen', sans-serif;
+}
+
+
+.search-place input::placeholder{
+    color: #8f0000;
+}
+.btn-main{ /*boton del input search del buscador */
+    padding: 10px;
+    font-size: 15px;
+    background: var(--main-colordefondo);
+    color: #ffae00;
+    border-style: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn-search{
+    width: 40px;/* 40px de ancho*/
+}
+.options-place{
+    width: 250px;
+    display: flex; /*para que todos los elementos esten en una sola fila */
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+
+
+
+
+.item-option{ /*son los iconos de la barra */
+    padding: 5px 10px;
+    line-height: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    color:#fc7d00; /* este es el color de los iconos */
+    font-family: 'Sen', sans-serif;
+    display: flex; /*para que todos los elementos esten en una sola fila  ESTO ES LO QUE ESTA CAUSANDO L RAYA AZUL EN EL ICONO DEL CARRITO DE COMPRA*/
+    text-decoration: none;
+    
+
+}
+ a{
+    text-decoration: none;
+    color: #fc7d00; /*con esto solucionamos que en los iconos aparecia la raya azul creada por el display flex*/
+}
+
+.item-option p { /*es el p del nombre del nombre de usaurio que aparece en la barra cuando nos loquwamos*/
+    font-size: 15px;
+    margin: 0;
+    margin-left: 5px;
+
+}
+.main-content{
+    margin-top: 60px; /* margin top de 60px para que el header  y el main-content no se grucen osea no choquen */
+    width: 100%; /*anchura del 100% de la pagina*/
+    font-family: 'Sen', sans-serif; /* tipo de letra*/
+    background: transparent;
+}
+.content-page{
+    margin: auto; /* para que el contenido este centrado */
+    padding: 10px; /*el paddinh es la distancia entre el contenido y el contenedor*/
+    width: calc(100% - 20px); /* ancho del 100% de la pagina menos 20px por los 10px del padding 10px arriba y abajo y 10px a la izquierda y a la derecha */
+    max-width: 1180px; /*anchura maxima que puede alcanza es decir que el contenedor no va a poder tener mas de 1180px de anchura */
+}
+
+.content-page section { /*este es el section de product.php*/
+    display: flex; /* para que todos los elementos  esten en una sola fila */
+    background: #fefefe;
+
+}
+.part1{
+    padding: 10px;
+    width:calc(60% - 10px); /*ancho de del tamaño de la pagina*/
+}
+
+.part2{
+    padding: 10px;
+    width:calc(40% - 20px); /*ancho de del tamaño de la pagina*/
+    margin: 20px 0;
+}
+.part1 img{
+    width: 100%; /*anchur a del 100% del del tamano del contenedor*/
+}
+.part2 *{
+    margin: 10px 0; /*margin 10px arriba y abajo y 0 a la izquierda y a la derecha*/
+    
+    font-family: 'Sen',sans-serif;
+}
+.part2 h2{
+    color: #f8ab06;
+    font-size: 30px;
+}
+.part2 h1{
+    color: #ffae00;
+    font-size: 45px;
+}
+.part2 h1 span{
+    color: #ffae00;
+    font-size: 30px;
+}
+.part2 h3{
+    font-weight: normal;/*ancho de la letra*/
+    color: #8a1c1cf1;
+}
+.part2 button{ /*este es el boton de comprar de producto.php*/
+    border-style: none;
+    border-radius: 15px;
+    padding: 13px; /*15px arriba y abajo y 20px a a derecha y izquierda*/
+    color: #f8ab06;
+    background: var(--main-colordefondo);
+    cursor: pointer; /*aparece una manita apunttando cuando estamos en el boton*/
+    font-size: 16px; /*tamaño de la letra */
+}
+.boton-carrito-de-compras{ /*es el boton del carrito.php*/
+    border-style: none;
+    margin-top: 5px;
+    border-radius: 15px;
+    padding: 13px; /*15px arriba y abajo y 20px a a derecha y izquierda*/
+    color: #f8ab06;
+    background: var(--main-colordefondo);
+    cursor: pointer; /*aparece una manita apunttando cuando estamos en el boton*/
+    font-size: 16px; /*tamaño de la letra */
+}
+.title-section{
+    padding: 10px 0;
+    font-size: 20px;
+    color: #8f0000;
+    font-family: 'Sen', sans-serif; /* tipo de letra*/
+}
+.products-list{
+    display: table; /* display table y display inline-table van conectadas para que cuando se vallan agregando mas productos todos vayan uno al lado del otro pero al ocupar su tamaño total ellos se van acomodando como si fuera una tabla */
+    width: 100%; /* anchira del 100% del contenedor */
+}
+.product-box{
+    display: inline-table;  /* display table y display inline-table van conectadas para que cuando se vallan agregando mas productos todos vayan uno al lado del otro  pero al ocupar su tamaño total ellos se van acomodando como si fuera una tabla*/
+    padding: 10px;
+    width: calc(100%/5 - 20px); /*para que en una fila entren 5 productos hacemos esto el 100% entre 5 - 20px que es el padding 10px por arriba y abajo y 10px por l a derecha ay la izquierda*/
+}
+.product-box a{
+    text-decoration: none; /* quita los subrallados de los link que viene por defecto */
+}
+.product{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 3px #8f0000;
+    
+    background: var(--main-colordefondo);/*es el color de fondo donde aparece el titulo la descripcion y el precio*/
+    font-family: 'Sen', sans-serif; /* tipo de letra*/
+}
+.product img{ /*TAMAÑO DE LA IMAGEN ASI QUEDA PERFECTO */
+    width: 100%; /*CON ESTO AFECTAMOS EL TAMAÑO DE LA IMAGEN SUPER IMPORTANTE, HACE QUE EL ANCHO DE LA IMAGEN SEA DEL MISMO ANCHO QUE EL CONTENEDOR MAYOR  */
+    border-radius: 10px 10px 0 0; /*bordes a la imagen */
+    
+}
+.detail-title{
+    padding: 5px;
+    text-align: center; /* centra el texto*/
+    font-size: 18px; /*tamaño de letra */
+    color: #ffae00;
+    width: calc(100% - 10px);
+    height: 35px; /*hace q el titulo de los productos siempre tenggan la misma altura*/
+
+}		
+.detail-description{
+    text-align: center; /* centra el texto*/
+    font-size: 14px; /*tamaño de letra */
+    color: #e4e0e0;
+    padding: 5px;
+    width: calc(100% - 10px);
+    height: 54px; /* para que la descripcion de los productos siempre tengan esa altura en todas asi todas las imagenes tendran el mismo tamaño era 44px pero como tenemos de paddin 5 arriba y 5 abajo le restamos 10 ebtonces es 34px*/
+}
+.detail-price{
+    text-align: center;
+    font-size: 25px;
+    color: #f8ab06;
+    padding: 5px;
+    width: calc(100% - 10px);
+}		
+.detail-price span{
+    font-size: 20px;
+    
+    
+}
+
+.body-pedidos{
+    width: 100%; /*ancho del 100% del tamano del contenedor*/
+}
+.item-pedido{
+    display: flex; /*para que todos los elementos esten en una fila  */
+    border: 1px #f75c01 solid; /*borde del itempedido*/
+    margin-bottom: 5px  /*un margen por abajo de 5px ára que los ´roductos no esten pegados uno debajo de otro */;
+    background: #f8ab06;
+}
+.pedido-img{
+    width: 200px;/*un ancho de 200px*/
+}
+.pedido-img img{
+    width: 100%; /*ancho de la imagen del 100% del tamaño del contenedor*/
+}
+.pedido-detalle{
+    padding: 10px;
+    width: calc(100% - 220px); /*le ponemos 220 porque le estamos restando los padding 10px por arriba y abajo y 10px a la izquierda y la derecha*/
+   
+}
+.pedido-detalle h3,
+.pedido-detalle p{
+    margin: 5px 0; /*5px arriba y abajo  y 0 a la izquierda y a la derecha */
+}
+
+.ipt-procom{ /*son los imput de carrito.php*/
+    width: 250px;
+    margin-bottom: 5px;
+
+
+}
+

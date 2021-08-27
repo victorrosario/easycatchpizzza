@@ -14,9 +14,6 @@
     <!--BOOSTRAP CSS-->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!--CSS PROPIO-->
-    <link rel="stylesheet" href="css/estilos.css" />
-    <link rel="stylesheet" href="css/estilosregistroylogin.css">
-    <link rel="stylesheet" href="css/estilopaginaprincipal.css">
-
+    <link rel="stylesheet" href="css/"/>
   </head>
   <body>

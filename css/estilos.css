@@ -1,4 +1,4 @@
-
+/*estilo de la barra de navegacion de la pagina principal y del login */
 
 .navbar{
     background-color:#1d1414e0;
@@ -23,6 +23,7 @@
 
 .navbar-brand:hover, .navbar-brand:active{
     color:#f75c01 !important;
+    
 }
 
 

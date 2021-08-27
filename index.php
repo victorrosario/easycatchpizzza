@@ -1,16 +1,23 @@
-<?php
-include_once './app/Conexion.inc.php';
-include_once './app/RepositorioUsuario.inc.php';
-$titulo = "blog de victor";
-include_once './plantillas/documento-declaracion.inc.php';
-
-include_once './plantillas/navbar.inc.php';
-
-?>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easycatchpizza</title>
+  <!--BOOSTRAP CSS-->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/estilopaginaprincipal.css">
+  <link rel="stylesheet" href="css/estilos.css">
+ 
+</head>
+<body>
+  
 
     <!-- baarra de navegacion con boostrap-->
-
+      <?php
+        include_once("./plantillas/navbar.inc.php");
+      ?>
    
     <!-- fin de la barra de navegacion con bootrap-->
 
@@ -37,7 +44,7 @@ include_once './plantillas/navbar.inc.php';
             <p class="info__txt">en easycatchpizza entendemos que lo que nos une y nos identifica con nuestro clientes  es el amor por la pizza y si tu eres un amante de la pizza con piña estas en el ligar indicado </p>
           </article>
           <article class="info__columna">
-            <img src="img/redessocialespizza" alt="" class="info__img">
+            <img src="img/redessocialespizza.jpg" alt="" class="info__img">
             <h2 class="info__titulo">Redes Sociales</h2>
             <p class="info__txt">Siquenos en nuestras redes sociales para que estes al dia de todas nuestras nuevas promociones</p>
           </article>
@@ -79,15 +86,22 @@ include_once './plantillas/navbar.inc.php';
     <footer class="footer">
          <div class="social">
             <img src="img/icono1.png" alt"" title="" >
-             <img src="img/icono2.png" alt"" title="" >
-             <img src="img/icono3" alt"" title="" >
-             </div>
-         <p class="copy">&copy; Todos los derechos reservados a Richard Apaico | 2018</p>
+            <img src="img/icono2.png" alt"" title="" >
+           <img src="img/icono3.png" alt"" title="" >
+          </div>
+         <p class="copy">&copy; desarrollado por Victor Antonio Rosario Piña | 2021</p>
          </footer>
           
+         
 
     <!-- FIN DE LA REGILLA DE LA PAGINA-->
 
-  <?php
-                include_once './plantillas/documento-cierre.inc.php';
-  ?>
+     <!--BOOTSTRAP JS Y JQUERY 3.6-->
+     <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+
+   
+    
+</body>
+</html>
